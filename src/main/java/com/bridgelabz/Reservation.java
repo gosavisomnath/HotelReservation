@@ -1,7 +1,17 @@
 package com.bridgelabz;
 
-public class Reservation {
-    public static void main(String[] args) {
-        System.out.println("Welcome To The Hotel Reservation System");
+import java.util.List;
+
+public class Reservation implements ReservationImpl {
+    private List<Hotel> hotelList;
+
+
+
+    @Override
+    public void add() {
+        Hotel hotel=new Hotel();
+        hotelList.add(hotel);
+
+
     }
 }
